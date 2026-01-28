@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reproductors d'àudio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="cap">
+    <h1>SI T'AGRADA RADIOHEAD. . . <3 </h1>
+    <p>Proves d'àudio: "Creep"</p>
+  </header>
+
+  <main class="zona">
+
+    <!-- Reproductors -->
+    <section class="players" id="players">
+
+      <!-- ===== ÀUDIO 1: FLAC (base) ===== -->
+      <article class="bloc-audio">
+        <h2>Àudio 1 — FLAC (base, sense pèrdua)</h2>
+
+        <audio id="player1" controls preload="auto">
+          <source src="audio/Creep1.flac" type="audio/flac">
+          El teu navegador no suporta el tag audio.
+        </audio>
+
+        <div class="botons">
+          <button onclick="playAudio('player1')">Play ▶️</button>
+          <button onclick="pauseAudio('player1')">Pausa ⏸️</button>
+          <button onclick="volumMes('player1')">Volum + 🔊</button>
+          <button onclick="volumMenys('player1')">Volum - 🔈</button>
+          <button onclick="mesCinc('player1')">+5 segons</button>
+          <button onclick="menysCinc('player1')">-5 segons</button>
+          <button onclick="velocitatMes('player1')">Velocitat + ⏩</button>
+          <button onclick="velocitatMenys('player1')">Velocitat - ⏪</button>
+          <button onclick="toggleMute('player1')">Mute/Unmute 🔇</button>
+        </div>
+
+        <p class="temps">
+          Temps actual: <span id="temps-player1">0</span> segons
+        </p>
+      </article>
+
+      <!-- ===== ÀUDIO 2: WAV ===== -->
+      <article class="bloc-audio">
+        <h2>Àudio 2 — WAV (sense compressió)</h2>
+
+        <audio id="player2" controls preload="auto">
+          <source src="audio/Creep2.wav" type="audio/wav">
+          El teu navegador no suporta el tag audio.
+        </audio>
+
+        <div class="botons">
+          <button onclick="playAudio('player2')">Play ▶️</button>
+          <button onclick="pauseAudio('player2')">Pausa ⏸️</button>
+          <button onclick="volumMes('player2')">Volum + 🔊</button>
+          <button onclick="volumMenys('player2')">Volum - 🔈</button>
+          <button onclick="mesCinc('player2')">+5 segons</button>
+          <button onclick="menysCinc('player2')">-5 segons</button>
+          <button onclick="velocitatMes('player2')">Velocitat + ⏩</button>
+          <button onclick="velocitatMenys('player2')">Velocitat - ⏪</button>
+          <button onclick="toggleMute('player2')">Mute/Unmute 🔇</button>
+        </div>
+
+        <p class="temps">
+          Temps actual: <span id="temps-player2">0</span> segons
+        </p>
+      </article>
+
+      <!-- ===== ÀUDIO 3: MP3 128 ===== -->
+      <article class="bloc-audio">
+        <h2>Àudio 3 — MP3 128 kbps (CBR)</h2>
+
+        <audio id="player3" controls preload="auto">
+          <source src="audio/Creep3_128mp3.mp3" type="audio/mpeg">
+          El teu navegador no suporta el tag audio.
+        </audio>
+
+        <div class="botons">
+          <button onclick="playAudio('player3')">Play ▶️</button>
+          <button onclick="pauseAudio('player3')">Pausa ⏸️</button>
+          <button onclick="volumMes('player3')">Volum + 🔊</button>
+          <button onclick="volumMenys('player3')">Volum - 🔈</button>
+          <button onclick="mesCinc('player3')">+5 segons</button>
+          <button onclick="menysCinc('player3')">-5 segons</button>
+          <button onclick="velocitatMes('player3')">Velocitat + ⏩</button>
+          <button onclick="velocitatMenys('player3')">Velocitat - ⏪</button>
+          <button onclick="toggleMute('player3')">Mute/Unmute 🔇</button>
+        </div>
+
+        <p class="temps">
+          Temps actual: <span id="temps-player3">0</span> segons
+        </p>
+      </article>
+
+      <!-- ===== ÀUDIO 4: MP3 320 ===== -->
+      <article class="bloc-audio">
+        <h2>Àudio 4 — MP3 320 kbps (CBR)</h2>
+
+        <audio id="player4" controls preload="auto">
+          <source src="audio/Creep4_320mp3.mp3" type="audio/mpeg">
+          El teu navegador no suporta el tag audio.
+        </audio>
+
+        <div class="botons">
+          <button onclick="playAudio('player4')">Play ▶️</button>
+          <button onclick="pauseAudio('player4')">Pausa ⏸️</button>
+          <button onclick="volumMes('player4')">Volum + 🔊</button>
+          <button onclick="volumMenys('player4')">Volum - 🔈</button>
+          <button onclick="mesCinc('player4')">+5 segons</button>
+          <button onclick="menysCinc('player4')">-5 segons</button>
+          <button onclick="velocitatMes('player4')">Velocitat + ⏩</button>
+          <button onclick="velocitatMenys('player4')">Velocitat - ⏪</button>
+          <button onclick="toggleMute('player4')">Mute/Unmute 🔇</button>
+        </div>
+
+        <p class="temps">
+          Temps actual: <span id="temps-player4">0</span> segons
+        </p>
+      </article>
+
+      <!-- ===== ÀUDIO 5: OGG mitjà ===== -->
+      <article class="bloc-audio">
+        <h2>Àudio 5 — OGG Vorbis (qualitat mitjana)</h2>
+
+        <audio id="player5" controls preload="auto">
+          <source src="audio/Creep5_oggmitja.ogg" type="audio/ogg">
+          El teu navegador no suporta el tag audio.
+        </audio>
+
+        <div class="botons">
+          <button onclick="playAudio('player5')">Play ▶️</button>
+          <button onclick="pauseAudio('player5')">Pausa ⏸️</button>
+          <button onclick="volumMes('player5')">Volum + 🔊</button>
+          <button onclick="volumMenys('player5')">Volum - 🔈</button>
+          <button onclick="mesCinc('player5')">+5 segons</button>
+          <button onclick="menysCinc('player5')">-5 segons</button>
+          <button onclick="velocitatMes('player5')">Velocitat + ⏩</button>
+          <button onclick="velocitatMenys('player5')">Velocitat - ⏪</button>
+          <button onclick="toggleMute('player5')">Mute/Unmute 🔇</button>
+        </div>
+
+        <p class="temps">
+          Temps actual: <span id="temps-player5">0</span> segons
+        </p>
+      </article>
+
+      <!-- ===== ÀUDIO 6: OGG alt ===== -->
+      <article class="bloc-audio">
+        <h2>Àudio 6 — OGG Vorbis (qualitat alta)</h2>
+
+        <audio id="player6" controls preload="auto">
+          <source src="audio/Creep6_oggAlt.ogg" type="audio/ogg">
+          El teu navegador no suporta el tag audio.
+        </audio>
+
+        <div class="botons">
+          <button onclick="playAudio('player6')">Play ▶️</button>
+          <button onclick="pauseAudio('player6')">Pausa ⏸️</button>
+          <button onclick="volumMes('player6')">Volum + 🔊</button>
+          <button onclick="volumMenys('player6')">Volum - 🔈</button>
+          <button onclick="mesCinc('player6')">+5 segons</button>
+          <button onclick="menysCinc('player6')">-5 segons</button>
+          <button onclick="velocitatMes('player6')">Velocitat + ⏩</button>
+          <button onclick="velocitatMenys('player6')">Velocitat - ⏪</button>
+          <button onclick="toggleMute('player6')">Mute/Unmute 🔇</button>
+        </div>
+
+        <p class="temps">
+          Temps actual: <span id="temps-player6">0</span> segons
+        </p>
+      </article>
+
+      <!-- ===== ÀUDIO 7: MP3 64 mono ===== -->
+      <article class="bloc-audio">
+        <h2>Àudio 7 — MP3 64 kbps MONO (diferència molt notable)</h2>
+
+        <audio id="player7" controls preload="auto">
+          <source src="audio/Creep7_mono64kbps.mp3" type="audio/mpeg">
+          El teu navegador no suporta el tag audio.
+        </audio>
+
+        <div class="botons">
+          <button onclick="playAudio('player7')">Play ▶️</button>
+          <button onclick="pauseAudio('player7')">Pausa ⏸️</button>
+          <button onclick="volumMes('player7')">Volum + 🔊</button>
+          <button onclick="volumMenys('player7')">Volum - 🔈</button>
+          <button onclick="mesCinc('player7')">+5 segons</button>
+          <button onclick="menysCinc('player7')">-5 segons</button>
+          <button onclick="velocitatMes('player7')">Velocitat + ⏩</button>
+          <button onclick="velocitatMenys('player7')">Velocitat - ⏪</button>
+          <button onclick="toggleMute('player7')">Mute/Unmute 🔇</button>
+        </div>
+
+        <p class="temps">
+          Temps actual: <span id="temps-player7">0</span> segons
+        </p>
+      </article>
+
+    </section>
+
+    <!-- Taula comparativa -->
+    <section class="comparativa">
+      <h2>Taula de comparació</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Fitxer</th>
+            <th>Format / còdec</th>
+            <th>Diferències observades</th>
+            <th>Cas d’ús</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><b>Creep1.flac <em>(28,5 MB)</em></b></td>
+            <td>FLAC (sense pèrdua)</td>
+            <td>Qualitat molt alta amb compressió sense perdre informació. És la que he escollit com a referència. Té molt bon so, nítid.</td>
+            <td>Arxiu/col·lecció d’àudio d’alta qualitat.</td>
+          </tr>
+
+          <tr>
+            <td><b>Creep2.wav <em>(39,8 MB)</em></b></td>
+            <td>WAV (sense compressió)</td>
+            <td>Qualitat molt alta, però mida molt gran. És el “brut” sense compressió. Encara així, sona genial.</td>
+            <td>Edició/gravació quan es vol màxima fidelitat.</td>
+          </tr>
+
+          <tr>
+            <td><b>Creep3_128mp3.mp3 <em>(3,61 MB)</em></b></td>
+            <td>MP3 128 kbps (amb pèrdua)</td>
+            <td>Mida molt reduïda. La qualitat és correcta però pot perdre detall en parts complexes. No obstant, és difícil apreciar-ho.</td>
+            <td>Web/streaming quan es prioritza mida.</td>
+          </tr>
+
+          <tr>
+            <td><b>Creep4_320mp3.mp3 <em>(9,03 MB)</em></b></td>
+            <td>MP3 320 kbps (amb pèrdua)</td>
+            <td>Qualitat alta; pèrdua menys perceptible que a 128 kbps, però ocupa més.</td>
+            <td>Música online amb bona qualitat.</td>
+          </tr>
+
+          <tr>
+            <td><b>Creep5_oggmitja.ogg <em>(4,27 MB)</em></b></td>
+            <td>OGG Vorbis (qualitat mitjana, amb pèrdua)</td>
+            <td>Format obert. Qualitat similar a MP3 a qualitats mitjanes amb bona compressió.És complicat apreciar la diferència amb formats de qualitat.</td>
+            <td>Streaming i projectes de programari lliure.</td>
+          </tr>
+
+          <tr>
+            <td><b>Creep6_oggAlt.ogg <em>(8,99 MB)</em></b></td>
+            <td>OGG Vorbis (qualitat alta, amb pèrdua)</td>
+            <td>Millor qualitat que OGG mitjà, amb increment de mida. Al igual que amb l'anterior, costa de diferènciar.</td>
+            <td>Web quan es vol un format obert i qualitat alta.</td>
+          </tr>
+
+          <tr>
+            <td><b>Creep7_mono64kbps.mp3 <em>(1,80 MB)</em></b></td>
+            <td>MP3 64 kbps MONO (amb pèrdua)</td>
+            <td>La pèrdua és molt notable (menys detall, so molt "metàl·lic" pel meu gust). Fitxer molt lleuger.</td>
+            <td>Casos on la qualitat no és crítica (veu, proves, connexions molt limitades).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+  <footer class="container footer">
+    <p>Made By Sana - &copy; 2026</p>
+  </footer>
+
+</body>
+</html>

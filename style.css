@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Capçalera */
+.cap {
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+  background-color: rgb(189, 120, 189);
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  color: whitesmoke;
+  font-family: fantasy;
+}
+
+/* Contenidor principal */
+.zona {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+/* Contenidor dels reproductors: GRID */
+.players {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 24px;
+  grid-template-columns: 1fr;
+}
+
+/* En pantalles grans: 2 columnes */
+@media (min-width: 900px) {
+  .zona {
+    max-width: 1100px;
+  }
+
+  .players {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Bloc individual */
+.bloc-audio {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Reproductor */
+.bloc-audio audio {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* Títol */
+.bloc-audio h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+/* Botons: GRID */
+.botons {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+/* Botons */
+.botons button {
+  padding: 8px 10px;
+  cursor: pointer;
+  background-color: rgb(167, 120, 197);
+  color: #560b53;
+  border: 1px solid #bfa2d3;
+  border-radius: 6px;
+}
+
+/* Hover */
+.botons button:hover {
+  opacity: 0.9;
+}
+
+/* Text del temps */
+.temps {
+  margin: 6px 0 0 0;
+}
+
+/* Taula comparativa */
+.comparativa table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #d5d5f2;
+}
+
+/* Cel·les */
+.comparativa th,
+.comparativa td {
+  border: 1px solid #44154d;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Capçalera taula */
+.comparativa th {
+  background-color: #d1adda;
+  font-family: fantasy;
+  color: rgb(71, 27, 79);
+}
+
+
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: fantasy;
+  color: #560b53;
+}
